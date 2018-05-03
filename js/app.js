@@ -168,8 +168,7 @@ while (userInput = true && foodTries > 0) {
 
         } else if (userInput = true && foodTries > 6){
             badAnswer++;
-
-            console.log(userName + ' got the answer wrong after 6 tries')
+            console.log(userName + ' got the answer wrong after 6 tries');
             alert('You are sadly wrong after 6 guesses!');
             document.write('<br><br><br>Bummer. It took you more than 6 tries');
         }
@@ -178,5 +177,5 @@ while (userInput = true && foodTries > 0) {
 
 }
 
-document.write('<br><br><br>you got ' + badAnswer + ' incorrect answers, but at least you got ' + goodAnswer + ' good ones!');
+document.write('<br><br><br>' + userName + 'you got ' + badAnswer + ' incorrect answers, but at least you got ' + goodAnswer + ' good ones!');
 
