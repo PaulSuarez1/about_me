@@ -81,13 +81,13 @@ if (answer4 === 'beer') {
     //
     //
     // Ask the guessing game question
-var answer5 = prompt(userName + ', this is an easy one and it is not really about me, but I will ask you anyway. What year is it?').toLowerCase();
+var answer5 = prompt(userName + ', this is an easy one and it is not really about me, but I will ask you anyway. What year is it?');
 
 // User guesses "yes" "no" or "Y" "N"
 if (answer5 === '2018') {
     alert('You got it right!');
     console.log(userName + ' got the right answer!');
-    document.write('<br><br>' + answer5 + 'is right!!!! ' + userName + ', you are a bad***!');
+    document.write('<br><br>' + answer5 + ' is right!!!! ' + userName + ', you are a bad***!');
 
     } else if (answer5 > '2018') {
         alert('wtf dude...');
@@ -96,10 +96,37 @@ if (answer5 === '2018') {
     } else {
         alert('Noooopppeeeee');
         console.log(userName + ' got the wrong answer!');
-        document.write('<br><br>What year is it? You guessed ' + answer5 + ' ... QUIT LIVING IN THE PAST! ' + userName + ', please grow up a litte');    
+        document.write('<br><br>What year is it? You guessed ' + answer5 + ' ... QUIT LIVING IN THE PAST! ' + userName + ', please grow up a little!');    
     }
 
+    var answer6;
+    var lowGuess = 0;
+    var highGuess = 0;
+    var howManyTries = 0;
+    var answer6;
 
-// tell user if they are wrong or right
-//  next question
+while(answer6 !== '87' && howManyTries < 4) { 
+    answer6 = prompt(userName + ', lets play a guessing game. I am thinking of a number between 1 and 100. What do you think it is?');
+    howManyTries = lowGuess + highGuess + 1;
+    // User guesses "yes" "no" or "Y" "N"
+    if (answer6 === '87') {
+            alert('You got it right!');
+            console.log(userName + ' Good job! About time... the answer is in fact ' + answer6 + '!');
+            document.write('<br><br> Guess the number Im thinking about? ' + userName + ', Good job! About time... You guessed way too low ' + lowGuess + ' times and way too high ' + highGuess + ' times. Plus the right time, that is a total of ' + howManyTries + ' tries. The answer is in fact ' + answer6 + '!');
+    
+        } else if (howManyTries >= 4) {
+                alert('took more than 4 tries');
+                document.write('<br><br><br>Fail. took more than 4 tries');
 
+        } else if (answer6 > 87) {
+            highGuess++;
+            alert('Too high! Try again!');
+            console.log(userName + ' guessed a number that was too high');
+            
+        } else {
+            lowGuess++;
+            alert('Too low! Try again!');
+            console.log(userName + ' guessed a number that was too low');
+            
+        }
+    }
