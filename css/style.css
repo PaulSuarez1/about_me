@@ -1,12 +1,83 @@
 * {
-    color: olivedrab;
+    color: whitesmoke;
+    background-color: whitesmoke;
 }
-ul>li {
-	list-style-type: disc;
+h1 {
+    font-size: 4vw;
+    background-color: #B9BAA3;
+    
 }
-ol>li {
+#unOrg * {
+    margin: 2%;
+    list-style-type: disc;
+    padding: 5%;
+    border-radius: 25px;
+    
+}
+#org * {
+    margin: 2%;
     list-style-type: decimal;
+    padding: 5%;
+    border-radius: 25px;
 }
-li {
-    margin-left: 25px;
+#unOrg>ul {
+    background-color: #902923;
+
+}
+
+#org>ol {
+    background-color: #902923;
+
+}
+
+#unOrg>ul>li {
+    font-size: 1.5vw;
+    background-color: #902923;
+    margin-left: 10%;
+}
+
+#org>ol>li {
+    font-size: 1.5vw;
+    background-color: #902923;
+    margin-left: 10%;
+
+}
+
+#unOrg {
+    padding: 1%;
+    background-color: #D6D5C9;
+    border-radius: 25px;
+    width: 30%;
+
+}
+#org {
+
+    padding: 1%;
+    background-color: #D6D5C9;
+    border-radius: 25px;
+    width: 30%;
+
+}
+div {
+    margin-left: 11.7%;
+    display: inline-block;
+ 
+  
+
+}
+#main * {
+
+    width: center;
+
+}
+#script {
+    font-size: 25px;
+    margin-left: 23%;
+    margin-top: 50px;
+    padding: 2%;
+    border-radius: 25px;
+
+    width: 50%;
+    background-color: #902923;
+    color: whitesmoke;
 }
